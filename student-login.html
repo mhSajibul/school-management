@@ -6,19 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart School</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        fieldset{
+            height: auto;
+            width: 40%;
+            margin: 150px auto;
+            justify-content: center;
+            border-radius: 10px;
+            padding:20px 30px;
+            
+        }
+        input{
+            display: block;
+            margin-top: 10px;
+            width: 70%;
+            justify-content: center;
+        }
+        .input{
+            width: 90%;
+        }
+        .submit{
+            width: 30%;
+            
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <section>
-            
+
             <nav>
                 <h2 class="logo-title">SmartSchool</h2>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="">Notice</a></li>
                     <li><a href="">Contact</a></li>
-                    <li class="login"><a href="">Login</a>
+                    <li class="login"><a href="login.html">Login</a>
                         <ul class="dropdown">
                             <li><a href="teacher-login.html">Teacher</a></li>
                             <li><a href="student-login.html">Student</a></li>
@@ -29,7 +53,15 @@
         </section>
     </header>
     <main>
-
+        
+        <fieldset>
+            <h3>Login as a Student</h3>
+        <form action="student.html">
+            <input type="number" class="input" placeholder="Enter your ID">
+            <input type="password" class="input" placeholder="Enter your password">
+            <input type="submit" class="submit">
+        </form>
+    </fieldset>
     </main>
     <footer>
 

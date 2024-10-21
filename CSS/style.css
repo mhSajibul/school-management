@@ -12,16 +12,17 @@
 
 body{
     margin: 0px;
+    padding: 0;
     width: 100%;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 40px;
+    padding: 5px 70px;
     background-color: antiquewhite;
 }
-nav ul{
+nav > ul{
     display: flex;
 }
 nav ul li{
@@ -51,6 +52,24 @@ nav ul li a:hover{
 .login a:hover{
     border-radius: 7px;
     background-color: rgb(0, 120, 218);
+}
+nav ul li .dropdown{
+    display: none;
+    position: absolute;
+    margin-left: 0;
+    padding-left: 0;
+}
+nav ul li:hover .dropdown{
+    display: block;
+    
+}
+
+.dropdown li a{
+    
+        list-style-type: none;
+        border: #2d2d2d;
+        background:rgb(14, 0, 141);
+        font-weight: 300;
 }
 
 @media screen and (max-width: 560px) {
@@ -84,3 +103,4 @@ nav ul li a:hover{
         
     }
 } 
+
