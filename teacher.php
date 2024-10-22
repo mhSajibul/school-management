@@ -1,3 +1,10 @@
+<?php
+
+// echo "<pre>";
+// print_r($_REQUEST);
+// echo "</pre>";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +36,7 @@
     <main>
         <div class="container">
             <h3>Number Submit form by get method</h3>
-            <form action="php/main.php" method="post">
+            <form action="main.php" method="post">
                 <div class="subject">
                     <label for="sutdentID">Student's ID </label>
                     <input type="number" name="sutdentID" placeholder="Student's ID">
@@ -56,7 +63,7 @@
                 </div>
 
                 <div id="submit">
-                    <input type="submit" value="Submit" name="submit">
+                    <button type="submit" name="submit">submit</button>
                 </div>
             </form>
         </div>
